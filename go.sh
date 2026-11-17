@@ -32,7 +32,7 @@ else
     export EMBED_ZSTD=false
     export EMBED_GZIP=false
     export DISABLE_HTTP3=true
-    export MAX_CONNECTIONS=512
+    export MAX_CONNS=512
 
     cargo build --release
 
