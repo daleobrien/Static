@@ -29,4 +29,5 @@ certs/*.pem
 certs/*.der
 !certs/.gitkeep
 *.md
+!docs/*.md
 rust-server/dhat-heap.json
