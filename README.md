@@ -1,6 +1,6 @@
 <h1 align="center">Static</h1>
 
-<p align="center">A very fast, standalone static file web server in Rust: every file is minified, compressed and embedded in one binary.</p>
+<p align="center">Loads a page in 2 ms, twice as fast as nginx and five times as fast as Node, in 8 MB of memory: a standalone static file web server in Rust.</p>
 
 <p align="center">
   <a href="#quick-start"><b>Quick start</b></a> &nbsp;·&nbsp;
@@ -21,7 +21,8 @@ variables. HTTP/1.1, HTTP/2 and TLS share one port, with HTTP/3 over
 [quinn](https://github.com/quinn-rs/quinn) as an option. Files get
 content-hashed names, Subresource Integrity hashes and strict security
 headers, and open pages reload themselves when a new build is deployed. In
-Docker the whole image is under 1.5 MB.
+Docker the whole image is under 1.5 MB, against 13.4 MB for nginx and 307 MB
+for Node ([the comparison](docs/running.md#compared-with-nginx-and-node)).
 
 ## Quick start
 
